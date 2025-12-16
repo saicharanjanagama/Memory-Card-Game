@@ -21,7 +21,8 @@
 
 📸 **Preview:**  
 <p align="center">
-  <img src="images/screenshot.png" width="700" alt="Memory Card Game Preview"/>
+  <img src="images/Screenshot1.png" width="300" alt="Memory Card Game Preview"/>
+  <img src="images/Screenshot2.png" width="302" alt="Memory Card Game Preview"/>
 </p>
 
 ---
