@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/card-games.png">
+    <title>Memory Card Game</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <main class="wrap">
+
+        <!-- ⭐ START SCREEN -->
+        <section id="startScreen" class="start-screen">
+            <h1 class="title">Memory Card Game</h1>
+
+            <!-- ⭐ DARK MODE -->
+            <button id="modeToggle" class="btn subtle mode-btn">🌙 Dark Mode</button>
+
+            <div class="start-controls">
+                <label class="select-label">
+                    Theme:
+                    <select class="select-bar" id="themeSelect">
+                        <option value="emojis">Emojis</option>
+                        <option value="animals">Animals</option>
+                        <option value="food">Food</option>
+                        <option value="pokemon">Pokémon-ish</option>
+                    </select>
+                </label>
+
+                <label class="select-label">
+                    Size:
+                    <select class="select-bar" id="difficulty">
+                        <option value="4">4 × 4</option>
+                        <option value="6">6 × 6</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="best-score-box">
+                <h3>🏆 Best Score</h3>
+                <p>Moves: <b id="bestMoves">--</b></p>
+                <p>Time: <b id="bestTime">--</b></p>
+                <p>Score: <b id="bestScore">--</b></p>
+            </div>
+
+            <button id="startGame" class="btn primary start-btn">Start Game</button>
+        </section>
+
+        <!-- ⭐ GAME SCREEN -->
+        <section id="gameScreen" class="hidden">
+
+            <div class="game-header">
+                <button id="backToMenu" class="btn subtle">⬅ Back</button>
+
+                <div class="game-stats">
+                    <div class="chip">Moves: <span id="moves">0</span></div>
+                    <div class="chip">Time: <span id="time">00:00</span></div>
+                </div>
+
+                <button id="newGame" class="btn primary">Restart</button>
+            </div>
+
+            <section id="gameBoard" class="board"></section>
+        </section>
+
+        <!-- ⭐ MODAL -->
+        <div id="modal" class="modal">
+            <div class="modal-card">
+                <h2>🎉 You Won!</h2>
+                <p id="result"></p>
+
+                <div class="modal-actions">
+                    <button id="playAgain" class="btn primary">Play Again</button>
+                    <button id="closeModal" class="btn subtle">Close</button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <canvas id="confetti-canvas" class="confetti"></canvas>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
