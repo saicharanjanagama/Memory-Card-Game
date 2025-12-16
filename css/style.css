@@ -243,7 +243,7 @@ body[data-theme="dark"] .btn.subtle {
 }
 
 .select-bar {
-    padding: 6px 0;
+    padding: 6px;
     border-radius: 8px;
     border: linear-gradient(90deg, #ffe29f, #ff7b7b);
     cursor: pointer;
