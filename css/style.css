@@ -330,7 +330,7 @@ body[data-theme="dark"] .select-bar {
     .face {
         font-size: 44px;
     }
-    }
+ }
 
     /* Larger tablets & small laptops (768px – 1024px) */
     @media (max-width: 1024px) {
